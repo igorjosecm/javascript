@@ -12,14 +12,27 @@
 </head>
 <body>
     <h1>Sistema de nacionalidade</h1>
-    País: <input type="number" name="país" id="país">
-    <input type="button" value="verificar" onclick="clicar">
+
+    País: <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="calcular()">
+    
     <div id="res">
     
     </div>
     <script>
-        function verificar(){
+        function calcular(){
             
+            var pais = document.querySelector("input#pais")
+            var res = document.querySelector("div#res")
+            var ver = String(pais.value)
+
+            res.innerHTML = `<p>Você é do país: <strong>${ver}</strong></p>`
+            
+            if(ver == 'Brasil'){
+                res.innerHTML += "<p>Você é Brasileiro!</p>"
+            }else{
+                res.innerHTML += "<p>Você é Estrangeiro!</p>"
+            }
         }
     </script>
 </body>
