@@ -29,11 +29,11 @@ function verificar(){
             if(idade >= 0 && idade < 10){
                 img.setAttribute('src', 'imagens/bebe-mulher.png')
             } else if(idade < 21){
-                img.setAttribute('src', 'imagens/bebe-mulher.png')
+                img.setAttribute('src', 'imagens/jovem-mulher.png')
             } else if(idade < 50){
-                img.setAttribute('src', 'imagens/bebe-mulher.png')
+                img.setAttribute('src', 'imagens/adulto-mulher.png')
             } else{
-                img.setAttribute('src', 'imagens/bebe-mulher.png')
+                img.setAttribute('src', 'imagens/idoso-mulher.png')
             }
         }
         res.style.textAlign = 'center'
