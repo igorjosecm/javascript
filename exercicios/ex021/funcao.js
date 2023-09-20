@@ -1,8 +1,8 @@
 function parimp(n){
     if(n % 2 == 0){
-        return 'Par'
+        return 'Par!'
     }else{
-        return 'Impar'
+        return 'Ímpar!'
     }
 }
-let res = parimp (11)
+console.log(parimp(5))
