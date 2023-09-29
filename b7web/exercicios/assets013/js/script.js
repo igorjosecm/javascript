@@ -37,5 +37,22 @@ let ingredientes = [
 
 //ingredientes.shift(); ---remove o primeiro item do array
 
-console.log(ingredientes)
-console.log(`Total de ingredientes: ${ingredientes.length}`);
+//console.log(ingredientes)
+//console.log(`Total de ingredientes: ${ingredientes.length}`);
+
+//Exercícios
+
+let carros = ["BMW", "Ferrari", "Mercedes"];
+let x = [1];
+console.log("1." + carros[x]);
+
+carros[1] = "Audi";
+console.log("\n2. Lista com Audi:");
+console.log(carros);
+
+carros.push("Volvo");
+console.log("\n3. Lista com Volvo:");
+console.log(carros);
+
+console.log("\n4. itens no array:");
+console.log(carros.length);
