@@ -1,6 +1,14 @@
-let char = new Knight("Igor");
+let log = new Log(document.querySelector(".log"));
 
-console.log(char.name);
-console.log(char.life);
-console.log(char.attack);
+let char = new Sorcerer("Igor");
+let monster = new BigMonster();
 
+const stage = new Stage(
+    char,
+    monster,
+    document.querySelector("#char"),
+    document.querySelector("#monster"),
+    log
+);
+
+stage.start();

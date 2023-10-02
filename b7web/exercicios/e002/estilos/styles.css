@@ -13,12 +13,17 @@
     height: 10px;
     border: 1px solid black;
     border-radius: 5px;
+    margin: 10px 0px;
 }
 
 .lifebar > .bar {
     height: inherit;
     background-color: red;
     border-radius: 5px;
+}
+
+.attackButton {
+    margin: 10px 0px 0px;
 }
 
 .log {
