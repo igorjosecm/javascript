@@ -1,3 +1,13 @@
+let timer;
+
+function comecar(){
+    timer = setInterval(showTime, 1000);
+}
+
+function parar(){
+    clearInterval(timer);
+}
+
 function showTime(){
     let d = new Date();
     let h = d.getHours();
